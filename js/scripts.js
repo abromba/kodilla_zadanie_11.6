@@ -19,8 +19,7 @@ $(function() {
     function randomString() {
         var chars = '0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXTZ';
         var str = '';
-        var i = 0;
-        for (i = 0; i < 10; i++) {
+        for (var i = 0; i < 10; i++) {
             str += chars[Math.floor(Math.random() * chars.length)];
         }
         return str;
@@ -97,13 +96,13 @@ $(function() {
               connectWith: '.column-card-list',
               placeholder: 'card-placeholder'
         }).disableSelection();
-      };
+    };
 
-      $('.create-column').click(function(){
+    $('.create-column').click(function(){
         var name = prompt('Wpisz nazwę kolumny');
-        var column = new Column(name);
-        board.addColumn(column);
-      });
+          board.addColumn(new Column(name));
+    });
+
   
     var todoColumn = new Column('Do zrobienia');
     var doingColumn = new Column('W trakcie');

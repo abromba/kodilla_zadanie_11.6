@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #16a085;
+    color: #2c3e50;
 }
 
 h1 {
@@ -16,6 +17,13 @@ h1 {
     cursor: pointer;
     margin: 10px;
     line-height: 30px;
+    border: 2px solid #7f8c8d;
+    border-radius: 10px;
+}
+
+[class*="btn-"]:hover {
+    background-color: #16a085;
+    border: 2px solid #7f8c8d;
 }
 
 .board {
@@ -63,7 +71,8 @@ h1 {
 
 .card-placeholder {
     background-color: #d35400;
-	line-height: 60px;
+    height: 60px;
+    list-style-type: none;
 }
 
 .ui-sortable {
