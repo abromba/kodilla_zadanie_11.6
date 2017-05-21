@@ -43,7 +43,7 @@ $(function() {
             });
 
             $columnAddCard.click(function() {
-                self.addCard(new Card(prompt("Wpisz nazwę karty")));
+                self.addCard(new Card(prompt('Wpisz nazwę karty')));
             });
             
             $column.append($columnDelete).append($columnTitle).append($columnAddCard).append($columnCardList);
@@ -113,7 +113,7 @@ $(function() {
     board.addColumn(doingColumn);
     board.addColumn(doneColumn);
 
-    var card1 = new Card('Nowe zadanie');
+    var card1 = new Card('nowe zadanie');
     var card2 = new Card('tablica kanban');
     var card3 = new Card('wykonana tablica kanban');
 
