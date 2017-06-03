@@ -1,21 +1,4 @@
 $(function() {
-
-    var table = {
-        name: 'projekt',
-        element: $('div')
-    };
-    var column = {
-        id: '12j82da20k',
-        name: 'todo',
-        element: $('.column')
-    };
-    var card = {
-        id: '2kd8s958ka',
-        description: 'bnbmmb',
-        color: 'green',
-        element: $('.card')
-    };
-
     function randomString() {
         var chars = '0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXTZ';
         var str = '';
@@ -100,10 +83,8 @@ $(function() {
 
     $('.create-column').click(function(){
         var name = prompt('Wpisz nazwę kolumny');
-          board.addColumn(new Column(name));
+        board.addColumn(new Column(name));
     });
-
-  
     var todoColumn = new Column('Do zrobienia');
     var doingColumn = new Column('W trakcie');
     var doneColumn = new Column('Zakończone');
